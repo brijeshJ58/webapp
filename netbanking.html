@@ -1,32 +1,70 @@
-<html>
-<head> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <title> 
-  Welcome to Bank
+ Net Banking: Our Bank
 </title>
+<link rel="stylesheet" href="bankStyle.css">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;background-image: url('netBank.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-size: 100% 100%;background-color: #2121b1;
+}
+
+h4 {
+ color: red;
+}
+</style>
 </head>
 <body>
-<h1> Net Banking </h1>
-<div>
-  <a class="active" href="index.html">Home</a>
+
+<div class="header">
+  <img src="bankLogo.png" class="logo" alt="logo" />
+  <div class="header-right">
+<a  href="index.html">Home</a>
   <a href="about.html">About Us</a>
-  <a href="service.html">Services</a>
-  <a href="contact.html">Contact Us</a>
+  <a  href="service.html">Services</a>
+  <a class="active" href="#netbanking.html">Net Banking</a>
+  <a  href="contact.html">Contact Us</a>
+  </div>
 </div>
- <h3> Dear Customer, Thanks for visiting Our Bank Website. </h3>
 
- <h4> Kindly login into the website with your valid credentials </h4>
+<div>
+  <h1>Internet Banking: Our Bank</h1>
 
+
+<h3> Dear Customer, Thanks for visiting Our Bank Website. </h3>
+ 
+ <p> If you are a new customer, kindly <a  class="signUp" href="signup.html">SIGN UP</a> for the same</p>
+
+ <h3> Kindly login into the website with your valid credentials </h3>
 
  
-  <hr>
   <form action="index.html"> 
   <h3> 
-  Customer ID: <input type="text" name="un"> <br> <br>
-  Password: <input type="password" name="pwd"> <br>
+  <label>Customer ID:</label> <br>
+   <input type="text" name="un" required> <br> <br>
+  <label>Password: </label> <br>
+  <input type="password" name="pwd"required> <br>
   <br>
-  <input type="submit" name="b1" value="Login">
-  <input type="reset" name="b2" value="Reset">
+  <input class="buttonStyle" type="submit" name="c1" value="Login">
+  <input type="reset" name="c2" value="Reset" >
   </h3>
   </form>
-  </body>
+</div>
+<footer>
+  <p>Copyright &copy;2022 Author: Brijesh Jaiswal</p>
+  <p><a href="mailto:brijeshkumarjaiswal@gmail.com">brijeshkumarjaiswal@gmail.com</a></p>
+</footer>
+</body>
+
 </html>
+
+
+

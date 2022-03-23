@@ -1,19 +1,68 @@
-<html>
-<head> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <title> 
-Welcome toBank
+ Contact Us: Our Bank
 </title>
+<link rel="stylesheet" href="bankStyle.css">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  background-color: ##9393b7;
+}
+
+h4 {
+ color: red;
+}
+</style>
 </head>
 <body>
-<div>
-  <a href="index.html">Home</a>
+
+<div class="header">
+  <img src="bankLogo.png" class="logo" alt="logo" />
+  <div class="header-right">
+<a  href="index.html">Home</a>
   <a href="about.html">About Us</a>
   <a href="service.html">Services</a>
-  <a href="netbanking.html">NetBanking</a>
+  <a href="netbanking.html">Net Banking</a>
+  <a class="active" href="#contact.html">Contact Us</a>
+  </div>
 </div>
-<h3> CONTACT US:</h3>
-<h5>HELPLINE: 18002002342</h5>
 
-<p>Kindly visit our <a href="service.html">Services Page</a></p>
+<div>
+  <h1>Conatct Us: Our Bank</h1>
+  
+
+<h4>
+  INDIA HELPLINE: 1800200001 or leave message on below</h4>
+</h4>
+
+<div class="container">
+  <form action="index.html"> 
+  <h3> 
+   <label>Full Name:</label> <br>
+     <input type="text" name="fn" required> <br>
+	 
+	 <label> Mobile number:</label> <br>
+     <input type="text" name="pwd" required> <br> 
+	 <label>Message:</label> <br>
+     <textArea style="height:120px"> </textArea>
+  <br>
+  <input type="submit" name="b1" value="Submit">
+  </h3>
+  </form>
+  </div>
+</div>
+<footer>
+  <p>Copyright &copy;2022 Author: Brijesh Jaiswal</p>
+  <p><a href="mailto:brijeshkumarjaiswal@gmail.com">brijeshkumarjaiswal@gmail.com</a></p>
+</footer>
 </body>
+
 </html>
+
+

@@ -1,28 +1,62 @@
-<html>
-<head> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <title> 
-  Welcome to Bank
+ Services: Our Bank
 </title>
+<link rel="stylesheet" href="bankStyle.css">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  background-color: ##9393b7;
+}
+
+h4 {
+ color: red;
+}
+</style>
 </head>
 <body>
-<h1> Net Banking </h1>
-<div >
-  <a href="index.html">Home</a>
+
+<div class="header">
+  <img src="bankLogo.png" class="logo" alt="logo" />
+  <div class="header-right">
+<a  href="index.html">Home</a>
   <a href="about.html">About Us</a>
-  <a href="service.html">Services</a>
-  <a href="contact.html">Contact Us</a>
+  <a class="active" href="#service.html">Services</a>
+  <a href="netbanking.html">Net Banking</a>
+  <a  href="contact.html">Contact Us</a>
+  </div>
 </div>
+
+<div>
+  <h1>Services: Our Bank</h1>
+
+
+<h3> Dear Customer, Thanks for visiting Our Bank Website. </h3>
  
- <p> If you are a new customer, kindly <a href="signup.html">SIGN UP</a> for the same</p>
-  <hr>
-  <form action="index.html"> 
-  <h3> 
-  Customer ID: <input type="text" name="un"> <br> <br>
-  Password: <input type="password" name="pwd"> <br>
-  <br>
-  <input type="submit" name="b1" value="Login">
-  <input type="reset" name="b2" value="Reset">
-  </h3>
-  </form>
-  </body>
+<h4>Below are the services provided by the bank: </h4>
+<ul>
+<li><a href="#">Fixed Deposists</a></li>
+<li><a href="#">Home Loan</a></li>
+<li><a href="#">Personal Loan</a></li>
+<li><a href="#">Demat</a></li>
+<li><a href="#">Credit Card</a></li>
+<li><a href="#">Help Desk</a></li>
+<li><a href="#">Mutual funds</a></li>
+</ul>  
+<p>For more information, Kindly contact our  <a href="contact.html">Customer Service Executive</a></p>
+</div>
+<footer>
+  <p>Copyright &copy;2022 Author: Brijesh Jaiswal</p>
+  <p><a href="mailto:brijeshkumarjaiswal@gmail.com">brijeshkumarjaiswal@gmail.com</a></p>
+</footer>
+</body>
+
 </html>
+
+
+

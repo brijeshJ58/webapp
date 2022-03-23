@@ -1,34 +1,76 @@
-<html>
-<head> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <title> 
-Welcome to Our Bank
+ REGISTRATION: Our Bank
 </title>
+<link rel="stylesheet" href="bankStyle.css">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;background-image: url('netBank.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-size: 100% 100%;background-color: #2121b1;
+}
+
+
+h4 {
+ color: red;
+}
+</style>
 </head>
 <body>
-<h1> REGISTRATION </h1>
-<div>
-  <a class="active" href="index.html">Home</a>
+
+<div class="header">
+  <img src="bankLogo.png" class="logo" alt="logo" />
+  <div class="header-right">
+<a  href="index.html">Home</a>
   <a href="about.html">About Us</a>
-  <a href="service.html">Services</a>
-  <a href="netbanking.html">NetBanking</a>
-  <a href="contact.html">Contact Us</a>
+  <a  href="service.html">Services</a>
+  <a href="netbanking.html">Net Banking</a>
+  <a  href="contact.html">Contact Us</a>
+  </div>
 </div>
 
-<h4> Kindly provide unique password to make sure it is not vulnerable to hackers. </h4>
-<p> Please ensure the password contains mixture of alphanumeric, digits and it is of more than 8 length</p>
-<hr>
+<div>
+  <h1>Registration: Our Bank</h1>
+
+  <p> Please ensure the password contains mixture of alphanumeric, digits and it is of more than 8 length</p>
+
+<div class="container">
   <form action="netbanking.html"> 
   <h3> 
-    Full Name: <input type="text" name="fn"> <br> <br>
-    Aadhar Card: <input type="password" name="ac"> <br> <br>
-    Account No: <input type="text" name="an"> <br> <br>
-    Account Type: <input type="text" name="at"> <br> <br>  
-    Password: <input type="password" name="pwd"> <br> <br>
-    Repeat Password: <input type="password" name="pwd"> <br>
+   <label>Full Name:</label> <br>
+     <input type="text" name="fn" required> <br>
+	 <label> Account No:</label> <br>
+     <input type="text" name="an" required> <br> 
+	 <label>Account Type: </label> <br>
+    <input type="text" name="at"required> <br> 
+ <label>Pan Card No: </label>	 <br>
+	<input type="text" name="pt" required> <br> 
+	 <label> Password:</label> <br>
+     <input type="password" name="pwd" required> <br> 
+	 <label>Confirm Password:</label> <br>
+     <input type="password" name="cpwd" required> 
   <br>
-  <input type="submit" name="b1" value="Register">
+  <input class="buttonStyle" type="submit" name="b1" value="Register">
   <input type="reset" name="b2" value="Reset">
   </h3>
   </form>
+  </div>
+</div>
+<footer>
+  <p>Copyright &copy;2022 Author: Brijesh Jaiswal</p>
+  <p><a href="mailto:brijeshkumarjaiswal@gmail.com">brijeshkumarjaiswal@gmail.com</a></p>
+</footer>
 </body>
+
 </html>
+
+
+
+
