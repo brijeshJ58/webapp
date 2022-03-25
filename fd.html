@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> 
+ Services: Our Bank
+</title>
+<link rel="stylesheet" href="bankStyle.css">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  background-color: ##9393b7;
+}
+
+h4 {
+ color: red;
+}
+</style>
+
+<script src="bankJsFile.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <img src="bankLogo.png" class="logo" alt="logo" />
+  <div class="header-right">
+<a  href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn active">Services
+    </button>
+    <div class="dropdown-content">
+      <a href="loan.html">Loan</a>
+      <a class="active" href="#">Fixed Deposit</a>
+    </div>
+  </div>
+  <a href="netbanking.html">Net Banking</a>
+  <a  href="contact.html">Contact Us</a>
+  </div>
+</div>
+
+<div>
+  <h1>Fixed Deposit Service: Our Bank</h1>
+
+
+<h3> Dear Customer, Thanks for visiting Our Bank Website. </h3>
+ 
+<h4>Below are the details required for FD Maturity Amount Calaculation: </h4>
+<div class="container">
+  <form id="fdForm"> 
+  <h3> 
+   <label>Principal Amount:</label> <br>
+     <input type="number" name="an" id="fpa" placeholder="Enter Principal Amount" required> <br> <br> 
+	 <label> Duration:</label> <br>
+     <select id="fdDuration"  placeholder="Select Duration" name="duration" onChange="fdDurationChange();" required>
+	 <option  value="">Please Select</option>
+    <option value="1">1 Years</option>
+    <option value="3">2 Years</option>
+    <option value="3">3 Years</option>
+	<option value="4">4 Years</option>
+    <option value="5">5 Years</option>
+    <option value="6">6 Years</option>
+	<option value="7">7 Years</option>
+    <option value="8">8 Years</option>
+    <option value="9">9 Years</option>
+	<option value="10">10 Years</option>
+  </select><br> <br> 
+  <label>Annual Rate of Interest: </label>	 <br>
+	<input type="text" id="froi" placeholder="Rate of Interest" name="pt" disabled> <br> <br> <br> 
+	 
+  <div id="w1">
+		</div>
+  
+  <input class="buttonStyle" type="button" name="b3" value="calculate" onClick="displayfd();">
+  <input type="button" name="b4" value="Reset"  onClick="resetfdForm();"> 
+  </h3>
+  </form>
+  </div>
+<p>For more information, Kindly contact our  <a href="contact.html">Customer Service Executive</a></p>
+</div>
+<footer>
+  <p>Copyright &copy;2022 Author: Brijesh Jaiswal</p>
+  <p><a href="mailto:brijeshkumarjaiswal@gmail.com">brijeshkumarjaiswal@gmail.com</a></p>
+</footer>
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> 
+ Services: Our Bank
+</title>
+<link rel="stylesheet" href="bankStyle.css">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  background-color: ##9393b7;
+}
+
+h4 {
+ color: red;
+}
+</style>
+
+<script src="bankJsFile.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <img src="bankLogo.png" class="logo" alt="logo" />
+  <div class="header-right">
+<a  href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn active">Services
+    </button>
+    <div class="dropdown-content">
+      <a class="active" href="#">Loan</a>
+      <a href="fd.html">Fixed Deposit</a>
+    </div>
+  </div>
+  <a href="netbanking.html">Net Banking</a>
+  <a  href="contact.html">Contact Us</a>
+  </div>
+</div>
+
+<div>
+  <h1>Loan Service: Our Bank</h1>
+
+
+<h3> Dear Customer, Thanks for visiting Our Bank Website. </h3>
+ 
+<h4>Below are the details required for loan EMI Calaculation: </h4>
+<div class="container">
+  <form id="loanForm"> 
+  <h3> 
+   <label>Applicant Name:</label> <br>
+     <input type="text" id="fName" name="fn"  placeholder="Applicant Name" required> <br><br> 
+	 <label>Amount:</label> <br>
+     <input type="number" name="an" id="pa" placeholder="Enter Loan Amount" required> <br> <br> 
+	 <label>Type: </label> <br>
+    <select id="loanType"  placeholder="Select Loan Type" name="loanType" onChange="changeType()" required>
+	 <option value="">Please Select</option>
+    <option value="Home">Home</option>
+    <option value="Car">Car</option>
+    <option value="Personal">Personal</option>
+  </select><br><br> 
+  
+ <label>Annual Rate of Interest: </label>	 <br>
+	<input type="text" id="roi" placeholder="Rate of Interest" name="pt" disabled> <br> <br> 
+	 <label> Duration:</label> <br>
+     <select id="duration"  placeholder="Select Duration" name="duration" required>
+	 <option  value="">Please Select</option>
+    <option value="25">25 Years</option>
+    <option value="7">7 Years</option>
+    <option value="5">5 Years</option>
+  </select> <br><br><br><br>
+  <div id="d1">
+		</div>
+  
+  <input class="buttonStyle" type="button" name="b1" value="calculate" onClick="display();">
+  <input type="button" name="b2" value="Reset"  onClick="resetForm();"> 
+  <br>
+  <br>
+  </h3>
+  </form>
+  </div>
+<p>For more information, Kindly contact our  <a href="contact.html">Customer Service Executive</a></p>
+</div>
+<footer>
+  <p>Copyright &copy;2022 Author: Brijesh Jaiswal</p>
+  <p><a href="mailto:brijeshkumarjaiswal@gmail.com">brijeshkumarjaiswal@gmail.com</a></p>
+</footer>
+</body>
+
+</html>
+
+
+
